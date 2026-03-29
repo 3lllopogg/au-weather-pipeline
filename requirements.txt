@@ -1,0 +1,7 @@
+requests
+pyodbc
+python-dotenv
+pandas
+matplotlib
+seaborn
+pytest
