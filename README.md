@@ -6,7 +6,7 @@ After spending 2 years working as a Data Engineer at Cognizant in London, the En
 
 To refresh my data engineering skills, I decided to build a medallion architecture pipeline (Bronze → Silver → Gold) using Python and SQL Server. The goal is to compare weather patterns across Australian cities and use data to inform my decision on where to settle.
 
-The pipeline will ingest 365 days of hourly data from the Open-Meteo API for 8 Australian cities, alongside a custom city_metadata.csv dataset for enrichment and analysis.
+The pipeline will ingest 365 days of daily data from the Open-Meteo API for 8 Australian cities, alongside a custom city_metadata.csv dataset for enrichment and analysis.
 
 ## Tech Stack
 
@@ -47,6 +47,21 @@ This acts as the final consumption layer of the pipeline, enabling a data-driven
 - Canberra
 - Darwin
 - Hobart
+
+## Open-Meteo API Variables
+
+The pipeline ingests daily weather data from the Open-Meteo API using the following variables:
+
+- temperature_2m_max
+- temperature_2m_min
+- precipitation_sum
+- precipitation_hours
+- windspeed_10m_max
+- weathercode
+- uv_index_max
+- sunshine_duration
+
+These provide a combination of temperature, precipitation, wind, UV exposure, and sunshine metrics to support a well-rounded comparison of Australian cities.
 
 ## Notes on Data Quality
 
