@@ -1,9 +1,9 @@
 city_id,city_name,state,latitude,longitude,timezone,population_2021,area_km2,avg_house_price_aud,median_weekly_rent_aud,cost_of_living_index,climate_zone,beach_access,avg_annual_sunshine_hrs,walkability_score,public_transport_score,avg_annual_rainy_days,colloquial_name
-1,SYDNEY,N.S.W,-33.8688,151.2093,Australia/Sydney,"5,312,000",12368,"$1,470,000",700,100,humid subtropical,YES,2636,63,75,95,The Harbour City
-2,Melbuurne ,VIC.,-37.8136,144.9631,Australia/Melbourne,5078000,9993,"$950,000",580,96,OCEANIC,No,2373,63,78,84,
-3, Brisbane,Qld,-27.4698,153.0251,Australia/Brisbane,"2,582,000",15842,"$1,050,000",620,89,Humid Subtropical,yes,2999,51,54,77,Brissy
-4,pErth,w.a.,-31.9505,115.8605,Australia/Perth,2192000,6418,"$1,032,000",650,88,mediterranean,True,3212,50,47,79,The City of Light
-5,Adelaide ,S.A.,-34.9285,138.6007,Australia/Adelaide,"1,402,000",3258,"$962,000",550,83,Mediterranean,Y,2774,54,52,81,
-6,CANBERRA,A.C.T,-35.2809,149.1300,Australia/Sydney,453000,814,"$1,052,000",650,90,oceanic,false,2847,40,42,67,The Bush Capital
-7,darWin,N.T.,-12.4634,130.8456,Australia/Darwin,"148,000",3162,"$710,000",560,95,TROPICAL SAVANNA,1,3103,35,35,97,Top End
-8,Hobart,Tas.,-42.8821,147.3272,Australia/Hobart,240000,1695,"$779,000",490,78,Oceanic,no,2100,45,45,91,
+1,SYDNEY,N.S.W,-33.8688,151.2093,Australia/Sydney,5312000,12368,$1470000,700,100,humid subtropical,YES,2636,63,75,95,The_Harbour_City
+2,Melbuurne ,VIC.,-37.8136,144.9631,Australia/Melbourne,5078000,9993,$950000,580,96,OCEANIC,No,2373,63,78,84,
+3, Brisbane,Qld,-27.4698,153.0251,Australia/Brisbane,2582000,15842,$1050000,620,89,Humid Subtropical,yes,2999,51,54,77,Brissy
+4,pErth,w.a.,-31.9505,115.8605,Australia/Perth,2192000,6418,$1032000,650,88,mediterranean,TRUE,3212,50,47,79,The_City_of_Light
+5,Adelaide ,S.A.,-34.9285,138.6007,Australia/Adelaide,1402000,3258,$962000,550,83,Mediterranean,Y,2774,54,52,81,
+6,CANBERRA,A.C.T,-35.2809,149.13,Australia/Sydney,453000,814,$1052000,650,90,oceanic,FALSE,2847,40,42,67,The_Bush_Capital
+7,darWin,N.T.,-12.4634,130.8456,Australia/Darwin,148000,3162,$710000,560,95,TROPICAL SAVANNA,1,3103,35,35,97,Top_End
+8,Hobart,Tas.,-42.8821,147.3272,Australia/Hobart,240000,1695,$779000,490,78,Oceanic,no,2100,45,45,91,
