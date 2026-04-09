@@ -1,5 +1,4 @@
 import requests
-import pyodbc
 import json
 import uuid
 from datetime import datetime, timedelta, timezone
