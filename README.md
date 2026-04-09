@@ -6,7 +6,7 @@ After spending 2 years working as a Data Engineer at Cognizant in London, the En
 
 To refresh my data engineering skills, I decided to build a medallion architecture pipeline (Bronze → Silver → Gold) using Python and SQL Server. The goal is to compare weather patterns across Australian cities and use data to inform my decision on where to settle.
 
-The pipeline will ingest 365 days of daily data from the Open-Meteo API for 8 Australian cities, alongside a custom city_metadata.csv dataset for enrichment and analysis.
+The pipeline ingests 365 days of daily data from the Open-Meteo API for 8 Australian cities, alongside a custom city_metadata.csv dataset for enrichment and analysis.
 
 ## Tech Stack
 
@@ -15,6 +15,7 @@ The pipeline will ingest 365 days of daily data from the Open-Meteo API for 8 Au
 - Open-Meteo API (weather data source)
 - CSV (city metadata)
 - GitHub (version control)
+- pyodbc (Python --> SQL Server connectivity layer)
 
 ## Architecture Overview
 
@@ -23,6 +24,14 @@ The project follows a medallion architecture:
 - **Bronze**: Raw API JSON and CSV data stored as-is
 - **Silver**: JSON flattened, cleaned, structured, and validated data
 - **Gold**: Modelled data in a star schema for analytics
+
+## Pipeline features
+
+- Batch based ingestion using a unique `batch_id` for traceability
+- Ingestion logging with status (STARTED/SUCCESS/FAILED)
+- Seperation of ingestion logic (Python) and transformation logic (SQL)
+- API data is ingested via Python and stored as raw JSON file - 1 row per city
+- Stored procedure based CSV ingestion with staging tables
 
 ## Data Flow
 
@@ -70,4 +79,4 @@ These issues are resolved in the Silver layer and this approach ensures the tran
 
 ## Status
 
-🚧 In Progress — currently building Bronze ingestion layer
+🚧 In Progress — Bronze ingestion layer complete, currently building Silver transformation layer.
