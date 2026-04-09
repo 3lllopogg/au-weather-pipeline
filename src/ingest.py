@@ -5,7 +5,6 @@ import uuid
 from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
 from config import get_connection
-import os
 
 # ======================================
 # Load environment variables & config
