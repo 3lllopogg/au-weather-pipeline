@@ -79,9 +79,9 @@ try:
             "longitude": lon,
             "start_date": start_date,
             "end_date": end_date,
-            "daily": "temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_hours,windspeed_10m_max,weathercode,uv_index_max,sunshine_duration",
+            "daily": "temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_hours,windspeed_10m_max,weathercode,sunshine_duration",
             "timezone": "auto"
-        } 
+        }
 
         response = requests.get(url, params=params)
 

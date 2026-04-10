@@ -67,7 +67,6 @@ The pipeline ingests daily weather data from the Open-Meteo API using the follow
 - precipitation_hours
 - windspeed_10m_max
 - weathercode
-- uv_index_max
 - sunshine_duration
 
 These provide a combination of temperature, precipitation, wind, UV exposure, and sunshine metrics to support a well-rounded comparison of Australian cities.
