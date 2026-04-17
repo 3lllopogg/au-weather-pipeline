@@ -53,7 +53,7 @@ BEGIN
 			CAST(precip_sum.value AS FLOAT) precipitation_sum,
 			CAST(precip_hours.value AS FLOAT) precipitation_hours,
 			CAST(wind.value AS FLOAT) windspeed_max,
-			CAST(code.value AS INT) weather_code,
+			CAST(code.value AS INT) weathercode,
 
 			-- Weather code descriptive mapping
 			CASE CAST(code.value AS INT)
@@ -86,7 +86,7 @@ BEGIN
 			END AS weather_type,
 
 			-- Convert seconds --> hours
-			ROUND(CAST(sun.value AS FLOAT)/3600, 2) sunshine_duration, 
+			ROUND(CAST(sun.value AS FLOAT)/3600, 2) sunshine_hours, 
 			w.batch_id
 		
 		FROM bronze.weather_raw w
