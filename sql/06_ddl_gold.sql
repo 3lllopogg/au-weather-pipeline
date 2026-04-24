@@ -88,7 +88,10 @@ CREATE TABLE gold.fact_weather (
         REFERENCES gold.dim_date(date_key),
 
     CONSTRAINT PK_fact_city FOREIGN KEY (city_key)
-        REFERENCES gold.dim_city(city_key)
+        REFERENCES gold.dim_city(city_key),
+
+    -- Unique constraint to enforce the 1 row per city per day grain
+    CONSTRAINT UQ_fact_weather UNIQUE (date_key, city_key)
 );
 
 -- ==============================================================
