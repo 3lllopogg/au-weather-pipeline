@@ -23,7 +23,7 @@ CREATE TABLE silver.weather_daily (
 	precipitation_sum    FLOAT,
 	precipitation_hours  FLOAT,
 	windspeed_max        FLOAT,
-	weathercode          FLOAT,
+	weathercode          INT,
 	weather_type         VARCHAR(50),
 	sunshine_hours       FLOAT,
 	batch_id             UNIQUEIDENTIFIER,
